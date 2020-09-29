@@ -71,7 +71,7 @@ if tput setaf 1 &> /dev/null; then
 	vibrantblue=$(tput setaf 063);
 	red=$(tput setaf 167);
 	white=$(tput setaf 15);
-	purple=$(tput setaf 177);
+	purp=$(tput setaf 177);
 else
 	bold='';
 	reset="\e[0m";
@@ -95,7 +95,7 @@ fi;
 if [[ "${SSH_TTY}" ]]; then
 	hostStyle="${bold}${red}";
 else
-	hostStyle="${purple}";
+	hostStyle="${purp}";
 fi;
 
 # Set the terminal title to the current working directory.
