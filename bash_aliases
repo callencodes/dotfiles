@@ -8,11 +8,13 @@ alias .2='cd ../../'
 alias .3='cd ../../../'
 alias .4='cd ../../../../'
 alias .5='cd ../../../../../'
+alias h='cd ~'
+alias dev='cd ~/dev'
 
 # Python Aliases
 
-alias cve='python3 -m venv ./venv'
-alias ave='source ./venv/bin/activate'
+alias cve='python3 -m venv env'
+alias ave='. env/bin/activate'
 
 # Network Aliases
 
@@ -23,6 +25,7 @@ alias nt8='sudo lsof -i :8000'
 alias nt80='sudo lsof -i :8080'
 alias ntk='kill -9'
 alias ntg='sudo lsof | grep'
+alias nta='killall -9'
 
 # NPM Install Aliases
 
@@ -50,4 +53,5 @@ alias gpl='git pull'
 alias gsus='git push -u origin HEAD'
 alias gp='git push'
 alias gph='git push -f heroku'
+alias gss='git status -s'
 alias gs='echo ""; echo "*********************************************"; echo -e "   DO NOT FORGET TO PULL BEFORE COMMITTING"; echo "*********************************************"; echo ""; git status'
